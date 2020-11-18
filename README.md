@@ -1,3 +1,3 @@
-##Kids-stuff
+#Kids-stuff
 
 simple animations with Java Script
