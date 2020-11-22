@@ -8,15 +8,31 @@ body {
 
 #stage {
   height: 100vh;
-  background-color: lightblue;
   position: relative;
+}
+#stage h1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 6vw;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .square {
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   background-color: yellow;
   position: absolute;
+  transition: all;
+  transition-duration: 1000ms;
+}
+
+main {
+  padding: 10px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
