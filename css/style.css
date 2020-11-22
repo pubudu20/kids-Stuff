@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#stage {
+  height: 100vh;
+  background-color: lightblue;
+  position: relative;
+}
+
+.square {
+  width: 60px;
+  height: 60px;
+  background-color: yellow;
+  position: absolute;
+}
+
+/*# sourceMappingURL=style.css.map */
