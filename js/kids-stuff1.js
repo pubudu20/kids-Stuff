@@ -32,3 +32,16 @@ function randomColor(){
     var b = Math.random() * 256;
     return 'rgb('+ r +',' + g+',' + b + ')'
 }
+
+var title = document.querySelector("#stage h1");
+var text = "Direct Entry Programme!";
+
+var i = 0;
+setInterval(function(){
+    var displayText = text.substring(0,i++);
+    title.innerHTML = displayText + "<span class='caret'>|</span>";
+
+    if(i >= text.length){
+        i = 0;
+    }
+},250);

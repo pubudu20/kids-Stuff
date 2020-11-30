@@ -36,3 +36,19 @@ main{
   text-align: center;
 }
 
+.caret{
+  color: red;
+  animation-name: carett-visibility;
+  animation-iteration-count: infinite;
+  animation-duration: 500ms;
+}
+
+@keyframes carett-visibility{
+  8%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+}
+
