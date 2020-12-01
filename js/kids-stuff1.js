@@ -34,14 +34,19 @@ function randomColor(){
 }
 
 var title = document.querySelector("#stage h1");
-var text = "Direct Entry Programme!";
+var texts = [];
+texts.push("Down but not out!");
+texts.push("Better Late than Never!");
+texts.push("Not competing");
 
 var i = 0;
+var j = 0;
 setInterval(function(){
-    var displayText = text.substring(0,i++);
-    title.innerHTML = displayText + "<span class='caret'>|</span>";
+    var displayText = texts[j].substring(0,i++);
+    title.innerHTML = displayText + "<span class='caret'></span>";
 
-    if(i >= text.length){
+    if(i >= (texts[j].length +10)){
         i = 0;
+        j++;
     }
 },250);
